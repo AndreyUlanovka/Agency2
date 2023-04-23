@@ -679,6 +679,7 @@ html {
 .footer__copyrigth {
     margin-top: 52px;
     margin-left: 164px;
+    color: #B8B8B8;
 }
 .footer__icon {
     display: flex;
@@ -735,5 +736,18 @@ html {
     }
     .feedback-contacts::after {
         content: initial;
+    }
+    .footer {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer__copyrigth {
+        margin: 0;
+        margin-left: 176px;
+    }
+    .footer__icon {
+        margin: 0;
+        margin-left: 176px;
     }
 }
