@@ -321,7 +321,8 @@ html {
     list-style: none;
 }
 .product {
-    flex: 1 1 24%;
+    /* display: flex;
+    flex: 1 1 24%; */
     max-width: 300px;
     height: 292px;
     margin-bottom: 18px;
@@ -390,7 +391,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     margin-left: 461px;
-    margin-top: -483px;
+    margin-top: -461px;
 }
 /* @supports (display: grid) and (display: contents) {
     .team__members {
@@ -417,7 +418,7 @@ html {
     font-size: 30px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
 }
 .team__selected-about {
     font-style: normal;
@@ -436,8 +437,11 @@ html {
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
-    margin-right: 28px;
     margin-bottom: 60px;
+    letter-spacing: 0.9px;
+}
+.team__selected-link:not(:last-child) {
+    margin-right: 20px;
 }
 .team__selected-link:hover {
     text-decoration: underline;
@@ -447,7 +451,7 @@ html {
     position: relative;
     margin: 0;
     height: 216px;
-    width: 840px;
+    width: 820px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
@@ -480,6 +484,7 @@ html {
     visibility: hidden;
     position: absolute;
     bottom: 0px;
+
     margin: 0;
     opacity: 0.5;
 }
@@ -558,7 +563,7 @@ html {
 .feedback {
     margin: 0;
     box-sizing: border-box;
-    justify-content: center;
+    /* justify-content: center; */
     width: 100%;
     max-width: 752px;
 }
@@ -682,4 +687,53 @@ html {
     height: 33px;
     margin-top: 48px;
     margin-right: 168px;
+}
+
+@media (max-width: 1286px) {
+    .page-intro__content {
+        width: 50%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding-right: 16px;
+    }
+    .page-intro__heading {
+        font-size: 5vw;
+    }
+    .page-intro__img {
+        width: 70%;
+        height: auto;
+    }
+    .products {
+        justify-content: flex-start;
+    }   
+    .product {
+        max-width: 100%;
+        margin-right: 24px;
+    }
+    .feedback-contacts {
+        flex-wrap: wrap;
+        padding-left: initial;
+        padding-right: initial;
+        padding-bottom: 0;
+        /* grid-template-columns: 100%; */
+    }
+    .feedback {
+        margin-bottom: 30px;
+        padding: 0 1vw;
+        grid-column: 1 / 6;
+        grid-row: 1 / 2;
+    }
+    .feedback__body {
+        margin-right: 0;
+    }
+    .contacts {
+        width: 100%;
+        max-width: 731px;
+        margin: 0 1vw;
+        /* grid-column: 1 / 6;
+        grid-row: 2 / 3; */
+    }
+    .feedback-contacts::after {
+        content: initial;
+    }
 }
