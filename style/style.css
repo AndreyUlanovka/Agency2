@@ -1,4 +1,4 @@
-html {
+ html {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 .page__header-gray {
@@ -749,5 +749,47 @@ html {
     .footer__icon {
         margin: 0;
         margin-left: 176px;
+    }
+}
+
+@media (max-width: 800px) {
+    .page {
+        width: 800px;
+    }
+    .section {
+        margin-left: 3vw;
+    }
+    .header {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+    }
+    .feature {
+        justify-content: flex-start;
+    }
+    .products__filter {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .products {
+        flex-flow: column wrap;
+    }
+    .services__heading {
+        font-size: 5vw;
+    }
+    .subscribe__header {
+        font-size: 5vw;
+        margin: 5vw;
+    }
+    .subscribe__form {
+        flex-direction: column;
+        margin: 0;
+    }
+    .subscribe__input {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .subscribe__button {
+        width: 564px;
     }
 }
