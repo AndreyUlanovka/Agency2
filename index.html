@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Макет Agency</title>
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 </head>
 <body class="page">
     <div class="page__header page__header-gray"> 
@@ -102,13 +102,13 @@
             </ul>
         </Section>
         <section class="section team">
-            <div class="team__header">
+            <div class="team__header section">
                 <h2 class="team__heading section__heading" id="about">Meet our team</h2>
                 <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut 
                     labore Ui / Ux , print template.</p>
                 <hr class="header__line team__line">
             </div>
-            <div class="team__members">
+            <div class="team__members section">
                 <img class="team__selected-photo" src="./img/Selected_Image.png" alt="Главный">
             </div>
             <div class="team__main-content">
@@ -137,7 +137,7 @@
                         <img class="member__photo" src="./img/member_comands.png" alt="Средний">
                     </div>
                     <div class="member">
-                        <h3 class="member__name">4</h3>
+                        <h3 class="member__name member__name-last">4</h3>
                         <img class="member__photo" src="./img/member_comands.png" alt="Средний">
                     </div>
                 </section>
@@ -166,7 +166,7 @@
                     <form class="feedback__form">
                         <input class="feedback__input feedback__name" type="text" name="name" placeholder="Name" required>
                         <input class="feedback__input feedback__mail" type="email" name="mail" placeholder="Your Mail" required>
-                        <input class="feedback__input feedback__message" type="text" name="message" placeholder="Type your message">
+                        <textarea class="feedback__input feedback__message" type="text" name="message" placeholder="Type your message" maxlength="1000"></textarea>
                         <button class="feedback__button" type="submit">send message</button>
                     </form>
                 </section>
