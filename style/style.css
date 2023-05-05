@@ -37,6 +37,17 @@
     font-weight: 800;
     font-style: italic;
 }
+.line-red {
+    height: 5px;
+    width: 134px;
+    background-color: #FF2D2D;
+    border-width: 0;
+}
+.section-heading {
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 .page__header-gray {
     background-color: #F6F2F2;
 }
@@ -187,11 +198,9 @@
     bottom: 6px;
     width: 524px;
     height: 87px;
-    font-size: 42px;
     line-height: 55px;
     display: flex;
     align-items: center;
-    text-transform: uppercase;
     letter-spacing: 0.422159px;
     margin-bottom: 50px;
 }
@@ -218,7 +227,7 @@
     height: 558px;
     display: flex;
     flex-wrap: wrap;
-    /* margin-top: 32px; */
+    margin-top: 32px;
 }
 .services__footer_line {
     width: 1251px;
@@ -287,13 +296,10 @@
     justify-content: center;
 }
 .feature__heading {
-    font-weight: 700;
-    font-size: 42px;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.3834px;
-    text-transform: uppercase;
     margin-bottom: 28px;
 }
 .feature__text {
@@ -306,15 +312,6 @@
     max-width: 540px;
     margin: 0 auto 34px;
 }
-.header__line {
-    height: 5px;
-    width: 134px;
-    background-color: #FF2D2D;
-}
-/* .feature-line {
-    display: flex;
-    align-items: center;
-} */
 .products__filter {
     width: 100%;
     list-style: none;
@@ -388,10 +385,6 @@
     margin-bottom: 66px;
 }
 .team__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
-    text-transform: uppercase;
     margin: 0;
     margin-bottom: 34px;
 }
@@ -550,9 +543,6 @@
     align-items: center;
 }
 .subscribe__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 42px;
     letter-spacing: 1.05px;
     color: #fff;
     margin: 0;
@@ -610,10 +600,7 @@
     
 } */
 .feedback__heading {
-    font-weight: 700;
-    font-size: 42px;
     margin: 0;
-    text-transform: uppercase;
     letter-spacing: 0.3834px;
 }
 .feedback__text {
@@ -623,7 +610,6 @@
 }
 .feedback__line {
     margin: 58px auto 0 0;
-    border: none;
 }
 .feedback__body {
     position: relative;
@@ -695,10 +681,8 @@
     margin-top: 140px;
 }
 .contacts__heading {
-    font-weight: 700;
     font-size: 18px;
     line-height: 34px;
-    text-transform: uppercase;
     color: #fff;
 }
 .contacts__text {
@@ -733,10 +717,13 @@
     margin-right: 168px;
 }
 
-@media (max-width: 1286px) {
+/* Responsive */
+@media screen and (max-width: 1286px) {
     .page-intro__content {
         width: 50%;
         box-sizing: border-box;
+        flex-wrap: nowrap;
+        margin-left: 164px;
         margin-right: 0;
         padding-right: 16px;
     }
@@ -794,13 +781,37 @@
         margin-left: 176px;
     }
 }
+@media screen and (max-width: 900px) {
+    .services__header,
+    .services__blocks {
+        width: 100%;
+    }
+    /* Ничего не понимаю в гридах и как он меняет конкретно мою весртку, потому не применил что было в лекции :( */
+    .team__members {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .page {
         width: 800px;
     }
+    .services__header,
+    .services__blocks {
+        width: 100%;
+        max-width: 100%;
+    }
     .section {
         margin-left: 3vw;
+    }
+    .page-intro__content {
+        flex-wrap: wrap;
+    }
+    .page-intro__img {
+        width: 100%;
+        height: auto;
     }
     .header {
         justify-content: flex-start;
@@ -846,5 +857,36 @@
     }
     .member:nth-child(3) {
         margin-top: 20px;
+    }
+    .contacts {
+        padding: 1vw;
+        height: 100%;
+    }
+    .contacts__header {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    .header {
+        padding-left: 20px;
+    }
+    .page-intro {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page-intro__content {
+        width: 100%;
+    }
+    .page-intro__heading {
+        font-size: 40px;
+    }
+    .feedback__mail,
+    .feedback__name,
+    .feedback__message {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .feedback__message {
+        height: 150px;
     }
 }
