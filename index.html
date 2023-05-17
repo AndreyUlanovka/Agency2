@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Макет Agency</title>
     <link rel="stylesheet" href="./style/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async src="./js/script.js"></script>
 </head>
 <body class="page">
     <div class="page__header page__header-gray"> 
@@ -20,6 +21,15 @@
                     <li class="menu__item"><a class="menu__link" href="#about-us">about us</a></li>
                     <li class="menu__item"><a class="menu__link" href="#contact">contact</a></li>
                 </ul>
+                <div class="popup-menu">
+                    <button class="popup-menu__button"></button>
+                    <ul class="popup-menu__list hide-popup">
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#">home</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#portfolio">portfolio</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#about-us">about us</a></li>
+                        <li class="popup-menu__item"><a class="popup-menu__link" href="#contact">contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
     </div>
@@ -32,7 +42,7 @@
                          labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
                     <a class="action-button action-button__red" href="https://learn.innopolis.university/Students">Contact Us</a>
                 </div>
-                <img class="page-intro__img" src="./img/square-red-white.png" alt="Квадрат в квадрате">
+                <iframe class="page-intro__video" src="https://www.youtube.com/embed/0v7pdd4za6s" alt="Пример"></iframe>
             </section>
         </div>
         <section class="section services">
@@ -67,7 +77,7 @@
             <hr class="services__footer_line">
         </section>
         <section class="feature section">
-            <div class="feature__header">
+            <div class="feature__header" id="portfolio">
                 <h2 class="feature__heading section-heading">feature products</h2>
                 <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor
                      incididunt ut labore et.</p>
@@ -102,14 +112,14 @@
             </ul>
         </Section>
         <section class="section team">
-            <div class="team__header section">
+            <div class="team__header section" id="about-us">
                 <h2 class="team__heading section-heading" id="about">Meet our team</h2>
                 <p class="team__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut 
                     labore Ui / Ux , print template.</p>
                 <hr class="line-red team__line">
             </div>
             <div class="team__members section">
-                <img class="team__selected-photo" src="./img/Selected_Image.png" alt="Главный">
+                <img class="team__selected-photo" src="./img/team0.png" alt="Рэнди">
             </div>
             <div class="team__main-content">
                 <div class="team__selected-info">
@@ -125,26 +135,26 @@
                 </div>
                 <section class="members">
                     <div class="member">
-                        <h3 class="member__name">sokina jue</h3>
-                        <img class="member__photo" src="./img/member_comands.png" alt="Средний">
+                        <h3 class="member__name">Eric Cartman</h3>
+                        <img class="member__photo" src="./img/team1.jpg" alt="Картман">
                     </div>
                     <div class="member">
-                        <h3 class="member__name">2</h3>
-                        <img class="member__photo" src="./img/member_comands.png" alt="Средний">
+                        <h3 class="member__name">Kyle Broflovski</h3>
+                        <img class="member__photo" src="./img/team2.jpg" alt="Кайл">
                     </div>
                     <div class="member">
-                        <h3 class="member__name">3</h3>
-                        <img class="member__photo" src="./img/member_comands.png" alt="Средний">
+                        <h3 class="member__name">Sten Marsh</h3>
+                        <img class="member__photo" src="./img/team3.jpg" alt="Стэн">
                     </div>
                     <div class="member">
-                        <h3 class="member__name member__name-last">4</h3>
-                        <img class="member__photo" src="./img/member_comands.png" alt="Средний">
+                        <h3 class="member__name member__name-last">Kenny MacCormick</h3>
+                        <img class="member__photo" src="./img/team4.jpg" alt="Кенни">
                     </div>
                 </section>
             </div>
         </section>
         <section class="subscribe">
-            <div class="subscribe__header">
+            <div class="subscribe__header" id="contact">
                 <h2 class="subscribe__heading section-heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
                 <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
             </div>

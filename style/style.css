@@ -1,6 +1,6 @@
- /* html {
+html {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-} */
+}
 @font-face {
     font-family: 'open sans', sans-serif, Arial, Helvetica;
     src: url('../fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
@@ -72,8 +72,8 @@
     width: 1249px;
     min-height: 89px;
     margin: 0 auto;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #313030;
+    border: 1px solid #313030;
     mix-blend-mode: normal;
 }
 .header__navig {
@@ -112,6 +112,8 @@
     line-height: 24px;
     font-weight: 700;
 }
+
+
 /* intro */
 .page-content {
     flex-grow: 1;
@@ -163,10 +165,11 @@
     border-radius: 6px;
     text-decoration: none;
 }
-.page-intro__img {
+.page-intro__video {
     width: 551px;
     height: 356px;
     margin-top: 12px;
+    border: 1px solid #aaa1a1;
     /* background: #000000; */
     /* mix-blend-mode: normal; */
     /* opacity: 0.2; */
@@ -180,7 +183,6 @@
     margin: 0 auto;
     padding-left: 1vw;
     padding-right: 1vw;
-    /* margin-left: 164px; */
 }
 /* services */
 .services {
@@ -669,7 +671,7 @@
     letter-spacing: 0.317046px;
 }
 .contacts {
-    min-width: 580px;
+    width: 580px;
     min-height: 484px;
     background-color: #2D2D2D;
     align-self: flex-end;
@@ -728,7 +730,7 @@
     .page-intro__heading {
         font-size: 5vw;
     }
-    .page-intro__img {
+    .page-intro__video {
         width: 70%;
         height: auto;
     }
@@ -744,7 +746,6 @@
         padding-left: initial;
         padding-right: initial;
         padding-bottom: 0;
-        /* grid-template-columns: 100%; */
     }
     .feedback {
         margin-bottom: 30px;
@@ -757,10 +758,8 @@
     }
     .contacts {
         width: 100%;
-        max-width: 731px;
+        /* max-width: 731px; */
         margin: 0 1vw;
-        /* grid-column: 1 / 6;
-        grid-row: 2 / 3; */
     }
     .feedback-contacts::after {
         content: initial;
@@ -784,7 +783,7 @@
     .services__blocks {
         width: 100%;
     }
-    /* Ничего не понимаю в гридах и как он меняет конкретно мою весртку, потому не применил что было в лекции :( */
+    
     .team__members {
         display: grid;
         grid-template-columns: 100%;
@@ -807,7 +806,7 @@
     .page-intro__content {
         flex-wrap: wrap;
     }
-    .page-intro__img {
+    .page-intro__video {
         width: 100%;
         height: auto;
     }
@@ -830,7 +829,7 @@
         max-width: 250px;
     }
     .services__heading {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     .subscribe__header {
         font-size: 5vw;
@@ -890,4 +889,212 @@
     .feedback__message {
         height: 150px;
     }
+}
+@media screen and (max-width: 350px) {
+    .page-header {
+        width: 350px;
+        max-width: 100%;
+    }
+    .page-content {
+        width: 350px;
+    }
+    .page-intro__content {
+        width: 350px;
+    }
+    .page-intro__heading {
+        font-size: 36px;
+        width: 350px;
+        line-height: 1.2;
+        height: max-content;
+    }    
+    .page-intro__text {
+        width: 350px;
+        height: max-content;
+        font-size: 20px;
+    }
+    .header {
+        width: 350px;
+    }
+    .page__header-gray {
+        width: 350px;
+    }
+    .action-button {
+        width: 350px;
+    }
+    .page-intro__video{
+        width: 350px;
+        height: auto;
+    }
+    .services__heading {
+        font-size: 8vw;
+        width: 350px;
+    }
+    .services__text {
+        font-size: 6vw;
+        width: 350px;
+    } 
+    .services__blocks {
+        flex: 0;
+        width: 350px;
+        height: auto;
+    }
+    .services__footer_line {
+        width: 481px;
+        FONT-VARIANT: JIS83;
+    }
+    .feature {
+        width: 350px;
+    }
+    .feature__header {
+        width: 350px;
+        margin: 0;
+    }
+    .products {
+        width: 350px;
+        justify-content: center;
+    }
+    .product {
+        width: 350px;
+        margin: 0;
+    }
+    .team__header {
+        width: 350px;
+    }
+    .team__members {
+        width: 350px;
+    }
+    .team__selected-about {
+        width: 350px;
+    }
+    .members {
+        width: 350px;
+        height: auto;
+    }
+    .subscribe {
+        width: 350px;
+    }
+    .subscribe__heading {
+        font-size: 28px;
+    }
+    .subscribe__input {
+        width: 73%;
+    }
+    .subscribe__button {
+        width: 80%;
+        padding: 0;
+    }
+    .feedback-contacts {
+        flex-direction: column;
+    }
+    .feedback {
+        width: 350px;
+    }
+    .feedback__body {
+        width: 350px;
+        margin-top: 10px;
+    }
+    .feedback__form {
+        width: 350px;
+    }
+    .contacts {
+        width: 350px;
+        min-height: auto;
+        align-self: flex-start;
+    }
+    .contacts__header {
+        width: 350px;
+        margin: 0;
+    }
+    .footer {
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .footer__copyrigth,
+    .footer__icon {
+        margin: 0 auto;
+    }
+}
+
+/* popup-menu */
+.popup-menu__button {
+    z-index: 1;
+    display: none;
+    padding: 0;
+    min-width: 140px;
+    max-height: 100%;
+    background-image: url('../img/burger-menu.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+/* скрыть ненужные элементы: */
+@media screen and (max-width: 800px) {
+    .popup-menu__button {
+        display: block;
+    }
+    .menu {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+}
+    .popup-menu {
+        position: relative;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    popup-menu__list {
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        transform: translateY(100%);
+        z-index: 1;
+        min-width: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        background-color: #000000;
+        transition: visibility, transform 1s, 0.5s ease-in-out;
+    }
+
+@media screen and (min-width: 801px) {
+    .popup-menu__list {
+        visibility:hidden;
+    }     
+}
+.hide-popup {
+    transform: translateY(-50px);
+    z-index: -1;
+    visibility: hidden;
+}
+.popup-menu__item {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-height: 20px;
+}
+.popup-menu__item:hover {
+    background-color: #FF3F40;
+}
+.popup-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: #E0E0E0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
 }
